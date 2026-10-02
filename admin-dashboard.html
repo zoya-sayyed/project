@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - LifeCare Clinic</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="logo">+Life<span>Care Clinic</span></div>
+
+    <nav>
+        <a href="home.html" class="logout">Sign Out</a>
+
+        <details class="menu">
+            <summary>👤</summary>
+            <div class="menu-box">
+                <a href="doctor-login.html">🔐 Doctor Login</a>
+                <a href="index.html">↪ Sign Out</a>
+            </div>
+        </details>
+    </nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="doctor-summary">
+
+        <div class="summary-card">
+            <h3>Today's Appointments</h3>
+            <strong id="totalCount">25</strong>
+        </div>
+
+        <div class="summary-card">
+            <h3>Pending</h3>
+            <strong id="pendingCount">19</strong>
+        </div>
+
+        <div class="summary-card">
+            <h3>Approved</h3>
+            <strong id="approvedCount">6</strong>
+        </div>
+
+        <div class="summary-card">
+            <h3>Total Doctors</h3>
+            <strong>5</strong>
+        </div>
+
+    </div>
+
+
+    <!-- DOCTOR 1 -->
+
+    <div class="doctor-section">
+
+        <div class="doctor-section-heading">
+            <h2>Dr. Iqbal Khan</h2>
+            <p>General Medicine</p>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason of Visit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Ayesha Shaikh</td>
+                <td>25 Sep 2026</td>
+                <td>9:30 AM</td>
+                <td>Fever and weakness</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Rahul Verma</td>
+                <td>26 Sep 2026</td>
+                <td>10:00 AM</td>
+                <td>Cold and cough</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Neha Patil</td>
+                <td>27 Sep 2026</td>
+                <td>10:30 AM</td>
+                <td>Headache</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Aman Khan</td>
+                <td>28 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Stomach pain</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Mehak Joshi</td>
+                <td>29 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Body pain</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- DOCTOR 2 -->
+
+    <div class="doctor-section">
+
+        <div class="doctor-section-heading">
+            <h2>Dr. Ronak Sharma</h2>
+            <p>Pediatrics</p>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason of Visit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Riya Shah</td>
+                <td>24 Sep 2026</td>
+                <td>10:00 AM</td>
+                <td>Fever</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Arjun Mehta</td>
+                <td>25 Sep 2026</td>
+                <td>10:30 AM</td>
+                <td>Cold and cough</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Sana Ali</td>
+                <td>26 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Stomach ache</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Vikram Joshi</td>
+                <td>27 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Skin rash</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Alisha Khan</td>
+                <td>28 Sep 2026</td>
+                <td>12:00 PM</td>
+                <td>Weakness</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- DOCTOR 3 -->
+
+    <div class="doctor-section">
+
+        <div class="doctor-section-heading">
+            <h2>Dr. Shrishti Agarwal</h2>
+            <p>Gynecology</p>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason of Visit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Fatima Khan</td>
+                <td>21 Sep 2026</td>
+                <td>2:00 PM</td>
+                <td>Routine consultation</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Meera Joshi</td>
+                <td>22 Sep 2026</td>
+                <td>2:30 PM</td>
+                <td>General check-up</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Anjali More</td>
+                <td>23 Sep 2026</td>
+                <td>3:00 PM</td>
+                <td>Back pain</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Simran Kaur</td>
+                <td>24 Sep 2026</td>
+                <td>3:30 PM</td>
+                <td>Routine check-up</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Hina Shaikh</td>
+                <td>25 Sep 2026</td>
+                <td>4:00 PM</td>
+                <td>Health consultation</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- DOCTOR 4 -->
+
+    <div class="doctor-section">
+
+        <div class="doctor-section-heading">
+            <h2>Dr. Ananya Desai</h2>
+            <p>Dermatology</p>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason of Visit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Zoya Khan</td>
+                <td>26 Sep 2026</td>
+                <td>4:00 PM</td>
+                <td>Acne problem</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Priya Shah</td>
+                <td>27 Sep 2026</td>
+                <td>4:30 PM</td>
+                <td>Skin allergy</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Mohit Jain</td>
+                <td>28 Sep 2026</td>
+                <td>5:00 PM</td>
+                <td>Skin irritation</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Riya Deshmukh</td>
+                <td>29 Sep 2026</td>
+                <td>5:30 PM</td>
+                <td>Dry skin</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Kajal More</td>
+                <td>30 Sep 2026</td>
+                <td>6:00 PM</td>
+                <td>Rash</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <!-- DOCTOR 5 -->
+
+    <div class="doctor-section">
+
+        <div class="doctor-section-heading">
+            <h2>Dr. Gulki Joshi</h2>
+            <p>Dental Care</p>
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason of Visit</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Karan Shah</td>
+                <td>23 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Tooth pain</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Neha Kulkarni</td>
+                <td>24 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Dental check-up</td>
+                <td><span class="status approved">Approved</span></td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Aditya Singh</td>
+                <td>25 Sep 2026</td>
+                <td>12:00 PM</td>
+                <td>Tooth sensitivity</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Simran Patel</td>
+                <td>26 Sep 2026</td>
+                <td>12:30 PM</td>
+                <td>Gum pain</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+            <tr>
+                <td>Rahul Joshi</td>
+                <td>27 Sep 2026</td>
+                <td>1:00 PM</td>
+                <td>Toothache</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><button class="approve-btn" onclick="approve(this)">Approve</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<script>
+function approve(button) {
+
+    var row = button.closest("tr");
+
+    // Get the status from the Status column only
+    var status = row.cells[4].querySelector(".status");
+
+    // Prevent approving the same appointment twice
+    if (!status || !status.classList.contains("pending")) {
+        return;
+    }
+
+    // Update status
+    status.textContent = "Approved";
+    status.className = "status approved";
+
+    // Update the Action column
+    button.parentElement.innerHTML =
+        '<span class="status approved">Approved</span>';
+
+    // Refresh dashboard counts
+    updateCounts();
+}
+
+function updateCounts() {
+
+    var pending = 0;
+    var approved = 0;
+
+    // Check each appointment row in every doctor's table
+    document.querySelectorAll(".doctor-section table tr").forEach(function(row) {
+
+        // Skip table heading rows
+        if (row.cells.length < 5) {
+            return;
+        }
+
+        // Count only the Status column (column number 5)
+        var status = row.cells[4].querySelector(".status");
+
+        if (status) {
+            if (status.classList.contains("pending")) {
+                pending++;
+            } else if (status.classList.contains("approved")) {
+                approved++;
+            }
+        }
+    });
+
+    document.getElementById("pendingCount").textContent = pending;
+    document.getElementById("approvedCount").textContent = approved;
+}
+</script>
+
+</body>
+</html>

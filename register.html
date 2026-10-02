@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - LifeCare Clinic</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">+Life<span>Care Clinic</span></div>
+     
+    <nav>
+        <a href="patient-login.html">Login</a>
+     <details class="menu">
+     <summary>👤</summary>
+        <div class="menu-box">
+            <a href="doctors.html">🩺 Our Doctor's</a>
+            <a href="contact.html">📞Contact Us</a>
+        </div>
+    </details>  
+    
+    
+    </nav>
+</header>
+
+<section class="form-page">
+
+    <div class="form-box">
+
+        <h1 align="center">Create Account</h1>
+
+        <form action="patient-login.html">
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Mobile Number</label>
+            <input type="tel"
+            placeholder=""
+            pattern="[0-9]{10}"
+            maxlength="10"
+            inputmode="numeric"
+            required>
+
+            <label>Date of Birth</label>
+            <input type="date">
+
+            <label>Password</label>
+            <input type="password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" required>
+
+            <button type="submit" class="btn full-btn">
+                Register →
+            </button>
+
+        </form>
+
+        <div class="register-bottom">
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+    <button type="button" onclick="history.back()" class="back-btn">
+        Back
+    </button>
+</div>
+
+    </div>
+
+</section>
+<footer>
+    <div class="logo">+Life<span>Care Clinic</span></div>
+    <p>lifecare.clinic@gmail.com | +91 8999244768</p><span>
+    <p>📍Kalyani Nagar, Yerwada, Pune-06</p></span>
+</footer>
+
+</body>
+</html>

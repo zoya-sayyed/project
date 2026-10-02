@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment - LifeCare Clinic</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">+Life<span>Care Clinic</span></div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <details class="menu">
+        <summary>👤</summary>
+        <div class="menu-box">
+            <a href="my-appointments.html">▤ My Appointment's</a>
+            <a href="contact.html">📞Contact Us</a>
+            <a href="index.html">↪ Sign Out</a>
+        </div>
+    </details>
+    </nav>
+</header>
+
+<section class="form-page">
+
+    <div class="form-box large-form">
+
+        <h1 align="center">Book Your Appointment</h1>
+
+        <form action="appointment-success.html">
+
+            <label>Patient Name</label>
+            <input type="text" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Mobile Number</label>
+            <input type="tel"
+            placeholder=""
+            pattern="[0-9]{10}"
+            maxlength="10"
+            inputmode="numeric"
+            required>
+
+            <label>Select Doctor</label>
+
+            <select required>
+                <option value="">Choose Doctor</option>
+                <option>Dr. Iqbal Khan - General Medicine</option>
+                <option>Dr. Ronak Sharma - Pediatrics</option>
+                <option>Dr. Shrishti Agarwal - Gynecology</option>
+                <option>Dr. Ananya Desai - Dermatology</option>
+                <option>Dr. Gulki Joshi - Dental Care</option>
+            </select>
+
+            <label>Appointment Date</label>
+            <input type="date" required>
+
+            <label>Appointment Time</label>
+            <input type="time" required>
+
+            <label>Reason for Visit</label>
+            <textarea required></textarea>
+
+            <button type="submit" class="btn full-btn">
+                Book Appointment →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<footer>
+    <div class="logo">+Life<span>Care Clinic</span></div>
+    <p>lifecare.clinic@gmail.com | +91 8999244768</p><span>
+    <p>📍Kalyani Nagar, Yerwada, Pune-06</p></span>
+</footer>
+
+
+</body>
+</html>

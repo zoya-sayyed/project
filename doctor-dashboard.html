@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard - LifeCare Clinic</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+    <div class="logo">+Life<span>Care Clinic</span></div>
+
+    <nav>
+        <a href="home.html" class="logout">Sign Out</a>
+
+        <details class="menu">
+            <summary>👤</summary>
+            <div class="menu-box">
+                <a href="admin-login.html">▣ Admin Login</a>
+                <a href="index.html">↪ Sign Out</a>
+            </div>
+        </details>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Doctor's Dashboard</h1>
+
+    <div class="doctor-summary">
+        <div class="summary-card">
+            <h3>Today's Appointments</h3>
+            <strong>15</strong>
+        </div>
+
+        <div class="summary-card">
+            <h3>Pending</h3>
+            <strong>0</strong>
+        </div>
+
+        <div class="summary-card">
+            <h3>Approved</h3>
+            <strong>15</strong>
+        </div>
+    </div>
+
+    <!-- PATIENT DETAILS SCRIPT WILL HANDLE ALL NAMES -->
+
+    <div class="doctor-section">
+        <div class="doctor-section-heading">
+            <h2>Dr. Iqbal Khan</h2>
+            <p>General Medicine</p>
+        </div>
+
+        <p class="appointment-count">
+            Today's Appointments: 5 | Pending: 0 | Approved: 5
+        </p>
+
+        <table>
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="24" data-gender="Female">Ayesha Shaikh</button></td>
+                <td>27 Sep 2026</td>
+                <td>9:30 AM</td>
+                <td>Fever</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="31" data-gender="Female">Huma Sayyed</button></td>
+                <td>27 Sep 2026</td>
+                <td>10:00 AM</td>
+                <td>Neck Sprain</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="42" data-gender="Male">Rahul Verma</button></td>
+                <td>28 Sep 2026</td>
+                <td>10:30 AM</td>
+                <td>Regular Checkup</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="28" data-gender="Female">Neha Patil</button></td>
+                <td>28 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Headache</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="35" data-gender="Male">Aman Khan</button></td>
+                <td>29 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Cold and Cough</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+        </table>
+
+        <div class="patient-details" hidden></div>
+    </div>
+
+    <!-- DOCTOR 2 -->
+
+    <div class="doctor-section">
+        <div class="doctor-section-heading">
+            <h2>Dr. Ronak Sharma</h2>
+            <p>Pediatrics</p>
+        </div>
+
+        <p class="appointment-count">
+            Today's Appointments: 5 | Pending: 0 | Approved: 5
+        </p>
+
+        <table>
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="6" data-gender="Female">Riya Shah</button></td>
+                <td>25 Sep 2026</td>
+                <td>10:00 AM</td>
+                <td>Fever</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="9" data-gender="Male">Arjun Mehta</button></td>
+                <td>26 Sep 2026</td>
+                <td>10:30 AM</td>
+                <td>Checkup</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="8" data-gender="Female">Sana Ali</button></td>
+                <td>27 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Cold</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="11" data-gender="Male">Vikram Joshi</button></td>
+                <td>29 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Follow-up</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="10" data-gender="Male">Rahil Azam</button></td>
+                <td>29 Sep 2026</td>
+                <td>12:30 PM</td>
+                <td>Severe Headache</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+        </table>
+
+        <div class="patient-details" hidden></div>
+    </div>
+
+    <!-- DOCTOR 3 -->
+
+    <div class="doctor-section">
+        <div class="doctor-section-heading">
+            <h2>Dr. Shrishti Agarwal</h2>
+            <p>Gynecology</p>
+        </div>
+
+        <p class="appointment-count">
+            Today's Appointments: 5 | Pending: 0 | Approved: 5
+        </p>
+
+        <table>
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="29" data-gender="Female">Fatima Khan</button></td>
+                <td>21 Sep 2026</td>
+                <td>2:00 PM</td>
+                <td>Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="34" data-gender="Female">Meera Joshi</button></td>
+                <td>21 Sep 2026</td>
+                <td>2:30 PM</td>
+                <td>Regular Checkup</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="26" data-gender="Female">Anjali More</button></td>
+                <td>22 Sep 2026</td>
+                <td>3:00 PM</td>
+                <td>Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="30" data-gender="Female">Simran Kaur</button></td>
+                <td>22 Sep 2026</td>
+                <td>3:30 PM</td>
+                <td>Follow-up</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="27" data-gender="Female">Nandini Mudgal</button></td>
+                <td>22 Sep 2026</td>
+                <td>4:30 PM</td>
+                <td>Stomac Ache</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+        </table>
+
+        <div class="patient-details" hidden></div>
+    </div>
+
+    <!-- DOCTOR 4 -->
+
+    <div class="doctor-section">
+        <div class="doctor-section-heading">
+            <h2>Dr. Ananya Desai</h2>
+            <p>Dermatology</p>
+        </div>
+
+        <p class="appointment-count">
+            Today's Appointments: 5 | Pending: 0 | Approved: 5
+        </p>
+
+        <table>
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="25" data-gender="Female">Zoya Khan</button></td>
+                <td>27 Sep 2026</td>
+                <td>4:00 PM</td>
+                <td>Skin Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="32" data-gender="Female">Priya Shah</button></td>
+                <td>27 Sep 2026</td>
+                <td>4:30 PM</td>
+                <td>Skin Checkup</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="38" data-gender="Male">Mohit Jain</button></td>
+                <td>28 Sep 2026</td>
+                <td>5:00 PM</td>
+                <td>Skin Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="23" data-gender="Female">Riya Deshmukh</button></td>
+                <td>28 Sep 2026</td>
+                <td>5:30 PM</td>
+                <td>Follow-up</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="29" data-gender="Female">Nahid Sayyed</button></td>
+                <td>28 Sep 2026</td>
+                <td>5:30 PM</td>
+                <td>Skin Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+        </table>
+
+        <div class="patient-details" hidden></div>
+    </div>
+
+    <!-- DOCTOR 5 -->
+
+    <div class="doctor-section">
+        <div class="doctor-section-heading">
+            <h2>Dr. Gulki Joshi</h2>
+            <p>Dental Care</p>
+        </div>
+
+        <p class="appointment-count">
+            Today's Appointments: 5 | Pending: 0 | Approved: 5
+        </p>
+
+        <table>
+            <tr>
+                <th>Patient</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="40" data-gender="Male">Karan Shah</button></td>
+                <td>28 Sep 2026</td>
+                <td>11:00 AM</td>
+                <td>Tooth Pain</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="33" data-gender="Female">Neha Kulkarni</button></td>
+                <td>28 Sep 2026</td>
+                <td>11:30 AM</td>
+                <td>Dental Checkup</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="24" data-gender="Male">Aditya Singh</button></td>
+                <td>29 Sep 2026</td>
+                <td>12:00 PM</td>
+                <td>Dental Consultation</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="28" data-gender="Female">Simran Patel</button></td>
+                <td>29 Sep 2026</td>
+                <td>12:30 PM</td>
+                <td>Follow-up</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td><button class="patient-name" data-age="45" data-gender="Female">Priti Jain</button></td>
+                <td>29 Sep 2026</td>
+                <td>1:30 PM</td>
+                <td>White Wash</td>
+                <td><span class="status approved">Approved</span></td>
+            </tr>
+        </table>
+
+        <div class="patient-details" hidden></div>
+    </div>
+
+</section>
+
+<script>
+/* Make patient names clickable */
+document.querySelectorAll(".patient-name").forEach(function(button) {
+    button.style.cssText =
+        "border:0;background:none;padding:0;color:#061a42;" +
+        "text-decoration:underline;cursor:pointer;font:inherit;";
+
+    button.addEventListener("click", function() {
+        var row = button.closest("tr");
+        var section = button.closest(".doctor-section");
+        var table = button.closest("table");
+        var headers = Array.from(table.querySelectorAll("th"))
+            .map(function(th) { return th.innerText.trim(); });
+
+        var cells = Array.from(row.querySelectorAll("td"))
+            .map(function(td) { return td.innerText.trim(); });
+
+        var data = {};
+        headers.forEach(function(header, index) {
+            data[header] = cells[index];
+        });
+
+        var doctor = section.querySelector(".doctor-section-heading h2").innerText;
+        var specialty = section.querySelector(".doctor-section-heading p").innerText;
+        var panel = section.querySelector(".patient-details");
+
+        panel.hidden = false;
+        panel.style.cssText =
+            "display:block;margin:20px 0 0;text-align:left;" +
+            "max-width:560px;padding:18px;border:1px solid #d6deea;" +
+            "border-radius:8px;background:#fff;color:#222;box-sizing:border-box;";
+
+        panel.innerHTML = `
+            <h3 style="margin:0 0 14px;text-align:left;">
+                Patient Information
+            </h3>
+
+            <div style="text-align:left;line-height:1.9;">
+                <p style="margin:0;"><strong>Name:</strong> ${button.innerText}</p>
+                <p style="margin:0;"><strong>Age:</strong> ${button.dataset.age} years</p>
+                <p style="margin:0;"><strong>Gender:</strong> ${button.dataset.gender}</p>
+                <p style="margin:0;"><strong>Appointment Date:</strong> ${data["Date"]}</p>
+                <p style="margin:0;"><strong>Appointment Time:</strong> ${data["Time"]}</p>
+                <p style="margin:0;"><strong>Reason for Visit:</strong> ${data["Reason"]}</p>
+                <p style="margin:0;"><strong>Status:</strong> ${data["Status"]}</p>
+            </div>
+        `;
+    });
+});
+</script>
+
+</body>
+</html>
